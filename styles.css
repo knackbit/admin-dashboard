@@ -20,8 +20,11 @@
 }
 
 .sidebar {
-    background-color: blue;
+    background-color: rgb(103, 103, 224);
     grid-area: 1 / 1 / 3 / 2;
+    display: grid;
+    padding: 1rem;
+    grid-template-rows: repeat(3, min-content);
 }
 
 .header {
@@ -31,4 +34,8 @@
 
 .main-content {
     background-color: grey;
+}
+
+li {
+    list-style-type: none;
 }
