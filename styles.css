@@ -60,6 +60,10 @@ li {
     list-style-type: none;
     font-size: 1.25rem;
     line-height: 2.5rem;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: start;
+    gap: 10px;
 }
 
 
@@ -133,4 +137,53 @@ input {
 button {
     padding: 5px 15px;
     border-radius: 20px;
+}
+
+.icon-small {
+    height: 80%;
+    width: auto;
+    aspect-ratio: 1/1;
+}
+
+a>img {
+    display: grid;
+    justify-content: center;
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: auto 1fr 1fr;
+    gap: 10px;
+}
+
+.row2 {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    gap: 10px;
+}
+
+.project-wrapper {
+    grid-area: 1 / 1 / 3 / 2;
+}
+
+.announcement-wrapper {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.trending-wrapper {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.project-card-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 15px;
+}
+
+.project-card {
+    padding: 10px;
+    background-color: aliceblue;
+    border-radius: 5px;
+    box-shadow: 4px 5px 5px 0px rgba(0,0,0,0.5);
 }
