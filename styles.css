@@ -31,10 +31,6 @@
     padding: 1rem;
 }
 
-.wrapper>div {
-    
-}
-
 .sidebar {
     background-color: rgb(103, 103, 224);
     grid-area: 1 / 1 / 3 / 2;
@@ -160,7 +156,6 @@ a>img {
 .row2 {
     display: grid;
     grid-template-rows: auto 1fr;
-    gap: 10px;
 }
 
 .project-wrapper {
@@ -185,5 +180,15 @@ a>img {
     padding: 10px;
     background-color: aliceblue;
     border-radius: 5px;
+    
+}
+
+.light-shadow {
     box-shadow: 4px 5px 5px 0px rgba(0,0,0,0.5);
 }
+
+.col1 {
+    display: grid;
+    grid-auto-columns: 1fr;
+}
+
