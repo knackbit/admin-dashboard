@@ -149,10 +149,15 @@ a>img {
 .main-content {
     display: grid;
     grid-template-columns: 3fr 1fr;
-    grid-template-rows: auto 1fr 1fr;
-    gap: 10px;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    padding-bottom: 5%;
+    row-gap: calc(min(25px, 5%));
 }
 
+.gap20 {
+    gap: 20px;
+}
 .row2 {
     display: grid;
     grid-template-rows: auto 1fr;
@@ -173,11 +178,10 @@ a>img {
 .project-card-wrapper {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 15px;
 }
 
 .project-card {
-    padding: 10px;
+    padding: 15px;
     background-color: aliceblue;
     border-radius: 5px;
     
