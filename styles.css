@@ -104,7 +104,7 @@ li {
 .search-header {
     display: grid;
     grid-template-columns: auto repeat(3, min-content);
-    column-gap: 10px;
+    column-gap: 15px;
     align-items: center;
     
 }
