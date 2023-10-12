@@ -18,13 +18,17 @@
     font-size: 16px;
 }
 
+
+body {
+    height: 100vh;
+}
+
+
 .wrapper {
     display: grid;
     grid-template-columns: auto 1fr;
     grid-template-rows: auto 1fr;
-    min-height: 100vh;
-    max-height: fit-content;
-
+    height: 100vh;
 }
 
 .wrapper>* {
@@ -38,6 +42,7 @@
     padding: 16px;
     padding-right: 40px;
     grid-template-rows: repeat(3, min-content);
+    max-height: 1fr;
     gap: 30px;
 }
 
@@ -50,7 +55,14 @@
 .main-content {
     background-color: grey;
     padding-right: min(25px, 5%);
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    padding-bottom: 5%;
+    row-gap: calc(min(25px, 5%));
 }
+
 
 li {
     list-style-type: none;
@@ -146,17 +158,13 @@ a>img {
     justify-content: center;
 }
 
-.main-content {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 20px;
-    padding-bottom: 5%;
-    row-gap: calc(min(25px, 5%));
-}
 
 .gap20 {
     gap: 20px;
+}
+
+.gap10 {
+    gap: 10px;
 }
 .row2 {
     display: grid;
@@ -187,6 +195,10 @@ a>img {
     
 }
 
+.project-card>div {
+    padding: 15px;
+}
+
 .light-shadow {
     box-shadow: 4px 5px 5px 0px rgba(0,0,0,0.5);
 }
@@ -196,3 +208,19 @@ a>img {
     grid-auto-columns: 1fr;
 }
 
+.col2 {
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+
+.font-small {
+    font-size: .75rem;
+}
+
+.row-auto {
+    grid-auto-rows: 1fr;
+}
+
+.padding15 {
+    padding: 15px;
+}
