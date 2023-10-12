@@ -241,3 +241,7 @@ a>img {
     justify-content: right;
     gap: 10px;
 }
+
+input:focus {
+    
+}
