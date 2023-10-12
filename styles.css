@@ -16,6 +16,7 @@
 :root {
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
+    --violet: rgb(103, 103, 224);
 }
 
 
@@ -36,7 +37,7 @@ body {
 }
 
 .sidebar {
-    background-color: rgb(103, 103, 224);
+    background-color: var(--violet);
     grid-area: 1 / 1 / 3 / 2;
     display: grid;
     padding: 16px;
@@ -57,7 +58,7 @@ body {
     padding-right: min(25px, 5%);
     display: grid;
     grid-template-columns: 3fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: minmax(0, 1fr) minmax(0, 1fr);
     gap: 20px;
     padding-bottom: 5%;
     row-gap: calc(min(25px, 5%));
@@ -120,7 +121,7 @@ form {
 }
 
 input {
-    background-color: rgba(178, 180, 202, 0.5);
+    background-color: rgba(204, 204, 204, 0.25);
     border-radius: 2rem;
     padding: .5rem 1rem;
     width: auto;
@@ -143,6 +144,7 @@ input {
 }
 
 button {
+    background-color: var(--violet);
     padding: 5px 15px;
     border-radius: 20px;
 }
@@ -171,6 +173,10 @@ a>img {
     grid-template-rows: auto 1fr;
 }
 
+.row2reverse {
+    display: grid;
+    grid-template-rows: 1fr auto;
+}
 .project-wrapper {
     grid-area: 1 / 1 / 3 / 2;
 }
@@ -215,6 +221,7 @@ a>img {
 
 .font-small {
     font-size: .75rem;
+    text-overflow: ellipsis;
 }
 
 .row-auto {
@@ -223,4 +230,14 @@ a>img {
 
 .padding15 {
     padding: 15px;
+}
+
+.announcement-card-wrapper>div:not(:last-child) {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.icon-end {
+    display: flex;
+    justify-content: right;
+    gap: 10px;
 }
