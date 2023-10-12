@@ -95,21 +95,17 @@ li {
     font-size: 1rem;
     text-wrap: nowrap;
 }
-/* 
-.icon-button {
-    background-image: url(https://placehold.co/25);
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 25px;
-    width: 25px;
-} */
+.header {
+    display: grid;
+    grid-template-rows: auto auto;
+    row-gap: 15px;
+}
 
 .search-header {
     display: grid;
     grid-template-columns: auto repeat(3, min-content);
     column-gap: 10px;
     align-items: center;
-    row-gap: 15px;
     
 }
 
@@ -142,6 +138,12 @@ input {
     display: grid;
     grid-template-columns: min-content auto;
     column-gap: 10px;
+}
+
+.welcome-wrapper {
+    display: grid;
+    grid-template-columns: 2fr minmax(min-content, 1fr);
+    align-items: center;
 }
 
 button {
@@ -246,4 +248,13 @@ a>img {
 input:focus {
     outline: 1px solid rgb(0, 0, 255, 0.473);
     box-shadow: 2px 2px 4px 0px rgb(0, 0, 255, 0.473);
+}
+
+.col-flex {
+    display: flex;
+    gap: 15px;
+}
+
+.col-flex>button {
+    flex: 1;
 }
